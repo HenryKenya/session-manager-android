@@ -18,5 +18,11 @@ class DashboardActivity : AppCompatActivity() {
         val token = SessionManagerUtil.getUserToken(this)
         textToken.text = token
         textSessionStatus.text = sessionStatus.toString()
+
+        button2.setOnClickListener { endSession() }
+    }
+
+    private fun endSession() {
+        SessionManagerUtil.endUserSession(this)
     }
 }
