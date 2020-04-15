@@ -1,5 +1,6 @@
 package ke.co.skylinedesign.sessionmanagerexample
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ke.co.skylinedesign.session_manager.SessionManagerUtil
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             SessionManagerUtil.startUserSession(this, 60)
+            SessionManagerUtil.storeUserToken(this, "randomUserToken")
+            startActivity(Intent(this, DashboardActivity::class.java))
         }
     }
 }
