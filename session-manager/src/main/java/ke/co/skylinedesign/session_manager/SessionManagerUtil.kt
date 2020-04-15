@@ -5,9 +5,9 @@ import java.util.*
 
 object SessionManagerUtil {
 
-    const val SESSION_PREFERENCES = "ke.co.skylinedesign.session_manager.SESSION_PREFERENCES"
-    const val SESSION_TOKEN = "ke.co.skylinedesign.session_manager.SESSION_TOKEN"
-    const val SESSION_EXPIRY_TIME = "ke.co.skylinedesign.session_manager.SESSION_EXPIRY_TIME"
+    private const val SESSION_PREFERENCES = "ke.co.skylinedesign.session_manager.SESSION_PREFERENCES"
+    private const val SESSION_TOKEN = "ke.co.skylinedesign.session_manager.SESSION_TOKEN"
+    private const val SESSION_EXPIRY_TIME = "ke.co.skylinedesign.session_manager.SESSION_EXPIRY_TIME"
 
     fun startUserSession(context: Context, expiresIn: Int) {
         val calendar = Calendar.getInstance()
