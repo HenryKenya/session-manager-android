@@ -15,7 +15,7 @@ To install the application:
 2. Add the dependency
   ```
   dependencies {
-	        implementation 'com.github.HenryKenya:session-manager-android:Tag'
+	        implementation 'com.github.HenryKenya:session-manager-android:release-version'
 	}
   ```
   
